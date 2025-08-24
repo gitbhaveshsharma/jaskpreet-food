@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://jaskpreetfood.com/sitemap.xml
+
+# Disallow admin or sensitive areas (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /scripts/
+
+# Allow important pages
+Allow: /
+Allow: /about
+Allow: /products
+Allow: /certifications
+Allow: /contact

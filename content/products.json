@@ -1,0 +1,83 @@
+[
+  {
+    "id": "butter-chicken-gravy",
+    "name": "Butter Chicken Gravy",
+    "category": "Gravies & Simmer Sauces",
+    "dietary": "non-veg",
+    "spiceLevel": "medium",
+    "packSizes": ["200g", "1kg", "5kg"],
+    "shelfLife": "12 months (frozen)",
+    "storage": "Keep frozen at -18°C",
+    "features": ["chef-inspired", "batch-tested", "clean label"],
+    "image": "/placeholder.svg?height=300&width=400",
+    "badges": ["FSSAI", "Make in India"],
+    "shortDesc": "Rich tomato-butter gravy finished with aromatic spices.",
+    "specSheet": "/docs/butter-chicken-gravy.pdf"
+  },
+  {
+    "id": "paneer-makhani-gravy",
+    "name": "Paneer Makhani Gravy",
+    "category": "Gravies & Simmer Sauces",
+    "dietary": "veg",
+    "spiceLevel": "mild",
+    "packSizes": ["200g", "1kg", "5kg"],
+    "shelfLife": "12 months (frozen)",
+    "storage": "Keep frozen at -18°C",
+    "features": ["chef-inspired", "batch-tested", "clean label"],
+    "image": "/placeholder.svg?height=300&width=400",
+    "badges": ["FSSAI", "Make in India"],
+    "shortDesc": "Creamy tomato-cashew gravy perfect for paneer dishes.",
+    "specSheet": "/docs/paneer-makhani-gravy.pdf"
+  },
+  {
+    "id": "tandoori-marinade",
+    "name": "Tandoori Marinade",
+    "category": "Marinades & Rubs",
+    "dietary": "veg",
+    "spiceLevel": "hot",
+    "packSizes": ["100g", "500g", "2kg"],
+    "shelfLife": "18 months (ambient)",
+    "storage": "Store in cool, dry place",
+    "features": ["authentic spices", "no artificial colors", "restaurant-style"],
+    "image": "/placeholder.svg?height=300&width=400",
+    "badges": ["FSSAI", "Make in India"],
+    "shortDesc": "Authentic tandoori spice blend for perfect grilling.",
+    "specSheet": "/docs/tandoori-marinade.pdf"
+  },
+  {
+    "id": "mint-chutney",
+    "name": "Fresh Mint Chutney",
+    "category": "Chutneys & Dips",
+    "dietary": "veg",
+    "spiceLevel": "mild",
+    "packSizes": ["150g", "500g", "1kg"],
+    "shelfLife": "6 months (refrigerated)",
+    "storage": "Keep refrigerated at 2-8°C",
+    "features": ["fresh herbs", "no preservatives", "ready-to-eat"],
+    "image": "/placeholder.svg?height=300&width=400",
+    "badges": ["FSSAI", "Make in India"],
+    "shortDesc": "Fresh mint chutney with coriander and green chilies.",
+    "specSheet": "/docs/mint-chutney.pdf"
+  },
+  {
+  "id": "punjabi-shahi-chole",
+  "name": "Punjabi Shahi Chole",
+  "category": "Ready To Eat Meals",
+  "dietary": "veg",
+  "spiceLevel": "medium",
+  "packSizes": ["300g", "500g", "1kg"],
+  "shelfLife": "12 months",
+  "storage": "Store in a cool, dry place. Once opened, consume immediately.",
+  "features": [
+    "100% Natural",
+    "No Preservatives",
+    "Ready in 2 Minutes",
+    "Gluten Free"
+  ],
+  "image": "/food/veg/punjabi-shahi-chole.png",
+  "badges": ["FSSAI", "Make in India"],
+  "shortDesc": "North Indian style chickpea curry cooked with rich spices and herbs.",
+  "specSheet": "/docs/punjabi-shahi-chole.pdf"
+}
+
+]

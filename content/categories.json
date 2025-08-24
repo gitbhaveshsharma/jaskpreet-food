@@ -1,0 +1,45 @@
+[
+  {
+    "id": "gravies-sauces",
+    "name": "Gravies & Simmer Sauces",
+    "description": "Ready-to-use gravies and sauces for quick meal preparation",
+    "image": "/placeholder.svg?height=200&width=300",
+    "productCount": 12
+  },
+  {
+    "id": "marinades-rubs",
+    "name": "Marinades & Rubs",
+    "description": "Authentic spice blends and marinades for perfect flavoring",
+    "image": "/placeholder.svg?height=200&width=300",
+    "productCount": 8
+  },
+  {
+    "id": "chutneys-dips",
+    "name": "Chutneys & Dips",
+    "description": "Fresh chutneys and dips ready to serve",
+    "image": "/placeholder.svg?height=200&width=300",
+    "productCount": 15
+  },
+  {
+    "id": "ready-meals",
+    "name": "Ready-to-Eat Meals",
+    "description": "Complete meals ready to heat and serve",
+    "image": "/placeholder.svg?height=200&width=300",
+    "productCount": 10
+  },
+  {
+    "id": "rice-preparations",
+    "name": "Rice Preparations",
+    "description": "Flavored rice dishes and biryanis",
+    "image": "/placeholder.svg?height=200&width=300",
+    "productCount": 6
+  },
+  {
+    "id": "frozen-snacks",
+    "name": "Frozen Breads & Snacks",
+    "description": "Frozen breads, parathas, and snacks",
+    "image": "/placeholder.svg?height=200&width=300",
+    "productCount": 9
+  }
+  
+]

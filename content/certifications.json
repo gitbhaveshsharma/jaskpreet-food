@@ -1,0 +1,38 @@
+[
+  {
+    "id": "fssai",
+    "name": "FSSAI",
+    "fullName": "Food Safety and Standards Authority of India",
+    "description": "Licensed food business operator ensuring food safety standards",
+    "image": "/certifications/logo/fssai-logo-df4c.png?height=150&width=150",
+    "licenseNumber": "12345678901234",
+    "validUntil": "2026-12-31"
+  },
+  {
+    "id": "iso-22000",
+    "name": "ISO 22000",
+    "fullName": "Food Safety Management System",
+    "description": "International standard for food safety management systems",
+    "image": "/certifications/logo/iso-logo-registered-trademark.gif?height=150&width=150",
+    "licenseNumber": "ISO22000-2024-001",
+    "validUntil": "2027-06-30"
+  },
+  {
+    "id": "haccp",
+    "name": "HACCP",
+    "fullName": "Hazard Analysis Critical Control Points",
+    "description": "Systematic preventive approach to food safety",
+    "image": "/certifications/logo/haccp-seeklogo.png?height=150&width=150",
+    "licenseNumber": "HACCP-2024-JF001",
+    "validUntil": "2026-08-15"
+  },
+  {
+    "id": "halal",
+    "name": "Halal Certified",
+    "fullName": "Halal Food Certification",
+    "description": "Certified halal food products meeting Islamic dietary requirements",
+    "image": "/certifications/logo/halal-logo.png?height=150&width=150",
+    "licenseNumber": "HALAL-2024-001",
+    "validUntil": "2025-12-31"
+  }
+]

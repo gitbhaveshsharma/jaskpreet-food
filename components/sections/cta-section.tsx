@@ -26,7 +26,7 @@ export function CtaSection() {
               className="text-base border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
             >
               <Phone className="mr-2 h-4 w-4" />
-              Call +91 98765 43210
+              Call 9999912255
             </Button>
           </div>
         </div>

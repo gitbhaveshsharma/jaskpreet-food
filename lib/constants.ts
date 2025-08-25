@@ -2,7 +2,7 @@ export const COMPANY_INFO = {
   name: "Jaskpreet Food",
   tagline: "Chef-Inspired Food Solutions",
   description: "Industrial-grade, ready-to-cook and ready-to-eat products crafted for reliability, safety, and taste.",
-  phone: "+91 98765 43210",
+  phone: "9999912255",
   email: "info@jaskpreetfood.com",
   address: {
     street: "123 Industrial Area, Food Park",

@@ -36,7 +36,7 @@ export function ContactHero() {
           <div className="flex flex-col md:flex-row justify-center gap-8 pt-8">
             <div className="flex items-center space-x-3">
               <Phone className="h-5 w-5 text-primary" />
-              <span className="font-medium">+91 98765 43210</span>
+              <span className="font-medium">9999912255</span>
             </div>
             <div className="flex items-center space-x-3">
               <Mail className="h-5 w-5 text-primary" />

@@ -68,7 +68,7 @@ export function Header() {
         <div className="hidden lg:flex items-center space-x-4">
           <div className="flex items-center space-x-2 text-sm text-muted-foreground">
             <Phone className="h-4 w-4" />
-            <span>+91 98765 43210</span>
+            <span>9999912255</span>
           </div>
           <Link href="/contact">
             <Button size="sm">Get Quote</Button>
@@ -105,7 +105,7 @@ export function Header() {
               <div className="pt-4 border-t">
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-4">
                   <Phone className="h-4 w-4" />
-                  <span>+91 98765 43210</span>
+                  <span>9999912255</span>
                 </div>
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-4">
                   <Mail className="h-4 w-4" />

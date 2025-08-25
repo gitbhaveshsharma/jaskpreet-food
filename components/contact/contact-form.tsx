@@ -81,7 +81,7 @@ export function ContactForm() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="phone">Phone Number *</Label>
-              <Input id="phone" {...register("phone")} placeholder="+91 98765 43210" />
+              <Input id="phone" {...register("phone")} placeholder="9999912255" />
               {errors.phone && <p className="text-sm text-destructive">{errors.phone.message}</p>}
             </div>
 

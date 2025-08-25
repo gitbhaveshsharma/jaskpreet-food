@@ -2,44 +2,157 @@
   {
     "id": "gravies-sauces",
     "name": "Gravies & Simmer Sauces",
-    "description": "Ready-to-use gravies and sauces for quick meal preparation",
+    "description": "Ready-to-use gravies and simmer sauces for quick meal preparation, including classic curries, masalas, and international flavors.",
     "image": "/placeholder.svg?height=200&width=300",
-    "productCount": 12
+    "productCount": 12,
+    "examples": ["Tikka Masala Sauce", "Butter Chicken Gravy", "Thai Green Curry Sauce"],
+    "usage": "Pour over cooked meat or vegetables, simmer, and serve with rice or bread.",
+    "isActive": true,
+    "isHot": true,
+    "isTop": false
   },
   {
     "id": "marinades-rubs",
     "name": "Marinades & Rubs",
-    "description": "Authentic spice blends and marinades for perfect flavoring",
+    "description": "Authentic spice blends, wet and dry marinades, and rubs for perfect flavoring of meats, seafood, and vegetables.",
     "image": "/placeholder.svg?height=200&width=300",
-    "productCount": 8
+    "productCount": 8,
+    "examples": ["Tandoori Marinade", "BBQ Rub", "Herb & Garlic Marinade"],
+    "usage": "Coat ingredients before grilling, roasting, or baking to enhance flavor.",
+    "isActive": true,
+    "isHot": false,
+    "isTop": false
   },
   {
     "id": "chutneys-dips",
     "name": "Chutneys & Dips",
-    "description": "Fresh chutneys and dips ready to serve",
+    "description": "Fresh and preserved chutneys, dips, and spreads made from fruits, vegetables, and spices, ready to serve as condiments or appetizers.",
     "image": "/placeholder.svg?height=200&width=300",
-    "productCount": 15
+    "productCount": 15,
+    "examples": ["Mint Chutney", "Mango Chutney", "Hummus", "Salsa"],
+    "usage": "Serve with snacks, breads, or as accompaniments to main dishes.",
+    "isActive": true,
+    "isHot": false,
+    "isTop": false
   },
   {
     "id": "ready-meals",
     "name": "Ready-to-Eat Meals",
-    "description": "Complete meals ready to heat and serve",
+    "description": "Complete, pre-cooked meals in various cuisines, ready to heat and serve for convenience at home or on-the-go.",
     "image": "/placeholder.svg?height=200&width=300",
-    "productCount": 10
+    "productCount": 10,
+    "examples": ["Paneer Butter Masala Meal", "Dal Makhani with Rice", "Pasta Alfredo"],
+    "usage": "Microwave or heat on stove and serve directly.",
+    "isActive": true,
+    "isHot": true,
+    "isTop": false
   },
   {
     "id": "rice-preparations",
     "name": "Rice Preparations",
-    "description": "Flavored rice dishes and biryanis",
+    "description": "Flavored rice dishes, biryanis, and pilafs, pre-cooked or ready to cook, offering a variety of regional and international tastes.",
     "image": "/placeholder.svg?height=200&width=300",
-    "productCount": 6
+    "productCount": 6,
+    "examples": ["Vegetable Biryani", "Jeera Rice", "Fried Rice"],
+    "usage": "Heat and serve as a main or side dish.",
+    "isActive": true,
+    "isHot": false,
+    "isTop": false
   },
   {
     "id": "frozen-snacks",
     "name": "Frozen Breads & Snacks",
-    "description": "Frozen breads, parathas, and snacks",
+    "description": "Frozen Indian breads (naan, paratha), appetizers, and snacks, ready to bake, fry, or microwave for quick serving.",
     "image": "/placeholder.svg?height=200&width=300",
-    "productCount": 9
+    "productCount": 9,
+    "examples": ["Aloo Paratha", "Samosa", "Garlic Naan"],
+    "usage": "Heat as per instructions and serve as snacks or meal accompaniments.",
+    "isActive": true,
+    "isHot": true,
+    "isTop": false
+  },
+  {
+    "id": "home-cooked",
+    "name": "Home Cooked",
+    "description": "Authentic home-cooked style dishes, prepared using traditional recipes and methods for a homemade taste.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "productCount": 5,
+    "examples": ["Rajma", "Chole", "Aloo Gobi"],
+    "usage": "Heat and serve with rice or bread.",
+    "isActive": true,
+    "isHot": false,
+    "isTop": false
+  },
+  {
+    "id": "freeze-dried",
+    "name": "Freeze Dried",
+    "description": "Meals and ingredients preserved through freeze-drying, retaining nutrients and flavor for long shelf life and easy rehydration.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "productCount": 0,
+    "examples": ["Freeze-Dried Dal", "Instant Upma", "Vegetable Mix"],
+    "usage": "Add hot water to rehydrate and serve.",
+    "isActive": true,
+    "isHot": true,
+    "isTop": false
+  },
+  {
+    "id": "air-dried",
+    "name": "Air Dried",
+    "description": "Naturally air-dried products such as herbs, vegetables, and snacks, offering extended storage and concentrated flavors.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "productCount": 0,
+    "examples": ["Dried Methi Leaves", "Dried Mango Slices"],
+    "usage": "Use as ingredients in cooking or as snacks.",
+    "isActive": true,
+    "isHot": true,
+    "isTop": false
+  },
+  {
+    "id": "iqf",
+    "name": "Individual Quick Frozen",
+    "description": "Flash-frozen fruits, vegetables, and ready-to-cook items, preserving freshness, texture, and nutrients.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "productCount": 0,
+    "examples": ["IQF Green Peas", "IQF Mango Cubes"],
+    "usage": "Use directly from freezer in recipes or as sides.",
+    "isActive": true,
+    "isHot": false,
+    "isTop": false
+  },
+  {
+    "id": "canned",
+    "name": "Canned",
+    "description": "Sealed and preserved foods including vegetables, fruits, beans, and ready meals for convenience and long shelf life.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "productCount": 0,
+    "examples": ["Canned Chickpeas", "Canned Pineapple", "Canned Soup"],
+    "usage": "Open and use directly or heat as required.",
+    "isActive": true,
+    "isHot": false,
+    "isTop": false
+  },
+  {
+    "id": "nutraceuticals",
+    "name": "Nutraceuticals",
+    "description": "Products that provide health and nutritional benefits, including supplements, fortified foods, and functional beverages.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "productCount": 0,
+    "examples": ["Protein Powder", "Herbal Supplements", "Probiotic Drinks"],
+    "usage": "Consume as per recommended dosage or instructions.",
+    "isActive": true,
+    "isHot": false,
+    "isTop": false
+  },
+  {
+    "id": "pickle",
+    "name": "Pickle",
+    "description": "Traditional pickled vegetables and fruits, preserved in oil, vinegar, or brine, offering tangy and spicy flavors.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "productCount": 0,
+    "examples": ["Mango Pickle", "Lime Pickle", "Mixed Vegetable Pickle"],
+    "usage": "Serve as a condiment with meals.",
+    "isActive": true,
+    "isHot": false,
+    "isTop": false
   }
-  
 ]

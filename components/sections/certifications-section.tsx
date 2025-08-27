@@ -44,7 +44,7 @@ export function CertificationsSection() {
           ))}
         </div>
 
-        {/* Featured Certification Details */}
+        {/* Featured Certification Details
         <Card className="max-w-2xl mx-auto">
           <CardContent className="p-8 text-center">
             <div className="w-24 h-24 mx-auto mb-6 bg-muted rounded-xl flex items-center justify-center">
@@ -61,7 +61,7 @@ export function CertificationsSection() {
               <Badge variant="secondary">Valid until: {certifications[currentIndex].validUntil}</Badge>
             </div>
           </CardContent>
-        </Card>
+        </Card> */}
       </div>
     </section>
   )

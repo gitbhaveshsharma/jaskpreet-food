@@ -27,30 +27,32 @@ export function FeaturedCategoriesSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {featuredCategories.map((category) => (
-            <Card key={category.id} className="group hover:shadow-lg transition-all duration-300 cursor-pointer pt-0">
-              <CardContent className="p-0">
-                <div className="aspect-[4/3] rounded-t-lg overflow-hidden bg-muted">
-                  <img
-                    src={category.image || "/placeholder.svg"}
-                    alt={category.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-heading font-semibold text-lg mb-2">{category.name}</h3>
-                  <p className="text-muted-foreground text-sm mb-4">{category.description}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs text-muted-foreground">{category.productCount} Products</span>
-                    <Button variant="ghost" size="sm" asChild>
-                      <Link href={`/products?category=${category.id}`}>
-                        Explore
-                        <ArrowRight className="ml-1 h-3 w-3" />
-                      </Link>
-                    </Button>
+            <Link key={category.id} href={`/products?category=${category.id}`}>
+              <Card className="group hover:shadow-lg transition-all duration-300 cursor-pointer pt-0">
+                <CardContent className="p-0">
+                  <div className="aspect-[4/3] rounded-t-lg overflow-hidden bg-muted">
+                    <img
+                      src={category.image || "/placeholder.svg"}
+                      alt={category.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                  <div className="p-6">
+                    <h3 className="font-heading font-semibold text-lg mb-2">{category.name}</h3>
+                    <p className="text-muted-foreground text-sm mb-4">{category.description}</p>
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs text-muted-foreground">{category.productCount} Products</span>
+                      <Button variant="ghost" size="sm" asChild>
+                        <span>
+                          Explore
+                          <ArrowRight className="ml-1 h-3 w-3" />
+                        </span>
+                      </Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
 

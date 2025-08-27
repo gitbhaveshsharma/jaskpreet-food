@@ -57,7 +57,7 @@ export function Header() {
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold">
               JF
             </div>
-            <span className="font-heading text-xl font-bold">Jaskpreet Food</span>
+            <span className="font-heading text-xl font-bold">Jas'K'preet Food</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -76,8 +76,8 @@ export function Header() {
                     <DropdownMenuTrigger asChild>
                       <button
                         className={`text-sm font-medium transition-colors px-1 pb-1 ${isActive
-                            ? "text-primary border-b-2 border-primary"
-                            : "text-foreground border-b-2 border-transparent hover:border-primary"
+                          ? "text-primary border-b-2 border-primary"
+                          : "text-foreground border-b-2 border-transparent hover:border-primary"
                           }`}
                       >
                         {item.name}
@@ -219,8 +219,8 @@ export function Header() {
                   key={item.name}
                   href={item.href}
                   className={`text-sm font-medium transition-colors px-1 pb-1 ${isActive
-                      ? "text-primary border-b-2 border-primary"
-                      : "text-foreground border-b-2 border-transparent hover:border-primary"
+                    ? "text-primary border-b-2 border-primary"
+                    : "text-foreground border-b-2 border-transparent hover:border-primary"
                     }`}
                 >
                   {item.name}
@@ -264,8 +264,8 @@ export function Header() {
                         key={item.name}
                         href={item.href}
                         className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${isActive
-                            ? "bg-primary/10 text-primary"
-                            : "text-foreground hover:bg-gray-100 dark:hover:bg-gray-800"
+                          ? "bg-primary/10 text-primary"
+                          : "text-foreground hover:bg-gray-100 dark:hover:bg-gray-800"
                           }`}
                         onClick={() => setIsOpen(false)}
                       >

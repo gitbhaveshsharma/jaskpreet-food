@@ -1,6 +1,7 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useState, useMemo, useEffect } from "react"
+import { useSearchParams } from "next/navigation"
 import { ProductFilters } from "./product-filters"
 import { ProductGrid } from "./product-grid"
 import { ProductModal } from "./product-modal"
@@ -10,12 +11,37 @@ import type { Product } from "@/types/product"
 
 export function ProductCatalog() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
+  const searchParams = useSearchParams()
+
+  // Initialize filters from URL search parameters
   const [filters, setFilters] = useState({
     search: "",
     category: "",
     dietary: "",
     spiceLevel: "",
   })
+
+  // Update filters based on URL parameters when component mounts or search params change
+  useEffect(() => {
+    const categoryParam = searchParams.get('category')
+    const searchParam = searchParams.get('search')
+    const dietaryParam = searchParams.get('dietary')
+    const spiceLevelParam = searchParams.get('spiceLevel')
+
+    // Find category by ID and get its name for filtering
+    let categoryName = ""
+    if (categoryParam) {
+      const category = categories.find(cat => cat.id === categoryParam)
+      categoryName = category ? category.name : ""
+    }
+
+    setFilters({
+      search: searchParam || "",
+      category: categoryName,
+      dietary: dietaryParam || "",
+      spiceLevel: spiceLevelParam || "",
+    })
+  }, [searchParams])
 
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {

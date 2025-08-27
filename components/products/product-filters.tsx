@@ -21,7 +21,9 @@ interface ProductFiltersProps {
 
 export function ProductFilters({ filters, onFiltersChange, categories, totalProducts }: ProductFiltersProps) {
   const updateFilter = (key: string, value: string) => {
-    onFiltersChange({ ...filters, [key]: value })
+    // Handle "all" selection by setting empty string
+    const filterValue = value === "all" ? "" : value
+    onFiltersChange({ ...filters, [key]: filterValue })
   }
 
   const clearFilters = () => {

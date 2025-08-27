@@ -2,17 +2,20 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Shield, Award, Leaf } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function HeroSection() {
   return (
     <section className="relative py-20 lg:py-24 overflow-hidden">
       {/* Full-bleed background image placed outside the inner container */}
-      <img
+      <Image
         src="/bg/hero-bg.png"
         alt=""
-        aria-hidden="true"
-        loading="lazy"
-        className="absolute inset-0 w-full h-full object-cover opacity-70 -z-20 pointer-events-none"
+        fill
+        priority
+        className="object-cover opacity-70 -z-20 pointer-events-none"
+        sizes="100vw"
+        quality={75}
       />
 
       {/* Gradient overlay: top -> center -> bottom (white) */}
@@ -91,11 +94,15 @@ export function HeroSection() {
 
           {/* Hero Image */}
           <div className="relative">
-            <div className="aspect-square lg:aspect-[3.7/3] rounded-2xl overflow-hidden bg-muted ">
-              <img
+            <div className="aspect-square lg:aspect-[3.7/3] rounded-2xl overflow-hidden bg-muted relative">
+              <Image
                 src="/home/hero-img.png"
                 alt="Modern food processing facility"
-                className="w-full h-full object-cover"
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                quality={85}
               />
             </div>
             {/* Floating Cards */}

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import categories from "@/content/categories.json"
 
 export function FeaturedCategoriesSection() {
@@ -30,11 +31,14 @@ export function FeaturedCategoriesSection() {
             <Link key={category.id} href={`/products?category=${category.id}`}>
               <Card className="group hover:shadow-lg transition-all duration-300 cursor-pointer pt-0">
                 <CardContent className="p-0">
-                  <div className="aspect-[4/3] rounded-t-lg overflow-hidden bg-muted">
-                    <img
+                  <div className="aspect-[4/3] rounded-t-lg overflow-hidden bg-muted relative">
+                    <Image
                       src={category.image || "/placeholder.svg"}
                       alt={category.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      quality={75}
                     />
                   </div>
                   <div className="p-6">

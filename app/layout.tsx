@@ -68,6 +68,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <head>
+        {/* Resource hints for better performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+        {/* Preload critical images */}
+        <link rel="preload" as="image" href="/bg/hero-bg.png" />
+        <link rel="preload" as="image" href="/home/hero-img.png" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

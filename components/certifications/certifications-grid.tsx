@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Download, ExternalLink } from "lucide-react"
+import Image from "next/image"
 import certifications from "@/content/certifications.json"
 
 export function CertificationsGrid() {
@@ -20,8 +21,15 @@ export function CertificationsGrid() {
             <Card key={cert.id} className="hover:shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <div className="flex items-start space-x-6">
-                  <div className="w-20 h-20 bg-muted rounded-xl flex items-center justify-center flex-shrink-0">
-                    <img src={cert.image || "/placeholder.svg"} alt={cert.name} className="w-16 h-16 object-contain" />
+                  <div className="w-20 h-20 bg-muted rounded-xl flex items-center justify-center flex-shrink-0 relative">
+                    <Image
+                      src={cert.image || "/placeholder.svg"}
+                      alt={cert.name}
+                      width={64}
+                      height={64}
+                      className="object-contain"
+                      quality={75}
+                    />
                   </div>
                   <div className="flex-1">
                     <div className="flex items-start justify-between mb-3">

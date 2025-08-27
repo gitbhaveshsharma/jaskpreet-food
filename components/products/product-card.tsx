@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Eye, Download } from "lucide-react"
 import { useRouter } from "next/navigation"
+import Image from "next/image"
 import type { Product } from "@/types/product"
 import { DIETARY_TYPES, SPICE_LEVELS } from "@/lib/constants"
 
@@ -37,10 +38,13 @@ export function ProductCard({ product, onSelect }: ProductCardProps) {
       <CardContent className="p-0">
         {/* Product Image */}
         <div className="aspect-[3.7/3] rounded-t-xl overflow-hidden bg-muted relative">
-          <img
+          <Image
             src={product.image || "/placeholder.svg"}
             alt={product.name}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+            quality={75}
           />
           {/* Dietary Indicator */}
           <div className="absolute top-3 left-3">

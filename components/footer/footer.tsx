@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { MapPin, Phone, Mail } from "lucide-react"
 
 export function Footer() {
@@ -110,8 +111,22 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 border-t flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-6">
-            <img src="/fssai-approved-badge.png" alt="FSSAI Approved" className="h-8" />
-            <img src="/generic-manufacturing-logo.png" alt="Make in India" className="h-8" />
+            <Image
+              src="/fssai-approved-badge.png"
+              alt="FSSAI Approved"
+              width={100}
+              height={32}
+              className="h-8 w-auto"
+              quality={75}
+            />
+            <Image
+              src="/generic-manufacturing-logo.png"
+              alt="Make in India"
+              width={100}
+              height={32}
+              className="h-8 w-auto"
+              quality={75}
+            />
           </div>
           <p className="text-sm text-muted-foreground">© 2025 Jaskpreet Food. All rights reserved.</p>
         </div>

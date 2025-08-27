@@ -2,6 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
 import certifications from "@/content/certifications.json"
 import { useEffect, useState } from "react"
 
@@ -34,8 +35,15 @@ export function CertificationsSection() {
               onClick={() => setCurrentIndex(index)}
             >
               <CardContent className="p-6">
-                <div className="aspect-square w-20 mx-auto mb-4 bg-muted rounded-lg flex items-center justify-center">
-                  <img src={cert.image || "/placeholder.svg"} alt={cert.name} className="w-16 h-16 object-contain" />
+                <div className="aspect-square w-20 mx-auto mb-4 bg-muted rounded-lg flex items-center justify-center relative">
+                  <Image
+                    src={cert.image || "/placeholder.svg"}
+                    alt={cert.name}
+                    width={64}
+                    height={64}
+                    className="object-contain"
+                    quality={75}
+                  />
                 </div>
                 <h3 className="font-semibold text-sm mb-1">{cert.name}</h3>
                 <p className="text-xs text-muted-foreground">{cert.fullName}</p>
@@ -47,11 +55,14 @@ export function CertificationsSection() {
         {/* Featured Certification Details
         <Card className="max-w-2xl mx-auto">
           <CardContent className="p-8 text-center">
-            <div className="w-24 h-24 mx-auto mb-6 bg-muted rounded-xl flex items-center justify-center">
-              <img
+            <div className="w-24 h-24 mx-auto mb-6 bg-muted rounded-xl flex items-center justify-center relative">
+              <Image
                 src={certifications[currentIndex].image || "/placeholder.svg"}
                 alt={certifications[currentIndex].name}
-                className="w-20 h-20 object-contain"
+                width={80}
+                height={80}
+                className="object-contain"
+                quality={75}
               />
             </div>
             <h3 className="font-heading font-bold text-xl mb-2">{certifications[currentIndex].name}</h3>

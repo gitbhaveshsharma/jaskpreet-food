@@ -19,7 +19,10 @@ export function ContactHero() {
       <div className="container relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-4">
-            <Badge variant="secondary" className="text-sm">
+            <Badge
+              variant="secondary"
+              className="text-sm bg-green-100 text-green-800 border-green-200 px-2 py-1"
+            >
               Let's Connect
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-heading font-bold leading-tight">

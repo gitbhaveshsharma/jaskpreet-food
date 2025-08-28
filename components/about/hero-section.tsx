@@ -1,4 +1,4 @@
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/components/ui/badge";
 
 export function HeroSection() {
   return (
@@ -19,7 +19,10 @@ export function HeroSection() {
       <div className="container relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-4">
-            <Badge variant="secondary" className="text-sm">
+            <Badge
+              variant="secondary"
+              className="text-sm bg-green-100 text-green-800 border-green-200 px-2 py-1"
+            >
               Established 2018
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-heading font-bold leading-tight">
@@ -28,12 +31,14 @@ export function HeroSection() {
               <span className="text-primary">Since Day One</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              From a small kitchen to industrial-scale operations, Jaskpreet Food has been dedicated to transforming
-              traditional recipes into modern, scalable food solutions that maintain authentic taste and quality.
+              From a small kitchen to industrial-scale operations, Jaskpreet
+              Food has been dedicated to transforming traditional recipes into
+              modern, scalable food solutions that maintain authentic taste and
+              quality.
             </p>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

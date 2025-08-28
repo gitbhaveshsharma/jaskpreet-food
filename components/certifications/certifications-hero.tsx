@@ -1,5 +1,5 @@
-import { Badge } from "@/components/ui/badge"
-import { Shield, Award, CheckCircle } from "lucide-react"
+import { Badge } from "@/components/ui/badge";
+import { Shield, Award, CheckCircle } from "lucide-react";
 
 export function CertificationsHero() {
   return (
@@ -20,15 +20,24 @@ export function CertificationsHero() {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-4">
             <div className="flex justify-center space-x-2 mb-4">
-              <Badge variant="secondary" className="text-sm">
+              <Badge
+                variant="secondary"
+                className="text-sm bg-green-100 text-green-800 border-green-200 px-2 py-1"
+              >
                 <Shield className="h-3 w-3 mr-1" />
                 Quality Assured
               </Badge>
-              <Badge variant="secondary" className="text-sm">
+              <Badge
+                variant="secondary"
+                className="text-sm bg-green-100 text-green-800 border-green-200 px-2 py-1"
+              >
                 <Award className="h-3 w-3 mr-1" />
                 Certified
               </Badge>
-              <Badge variant="secondary" className="text-sm">
+              <Badge
+                variant="secondary"
+                className="text-sm bg-green-100 text-green-800 border-green-200 px-2 py-1"
+              >
                 <CheckCircle className="h-3 w-3 mr-1" />
                 Compliant
               </Badge>
@@ -39,12 +48,13 @@ export function CertificationsHero() {
               <span className="text-primary">You Can Trust</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Our commitment to excellence is backed by industry-leading certifications and rigorous quality management
-              systems that ensure the highest standards of food safety and quality.
+              Our commitment to excellence is backed by industry-leading
+              certifications and rigorous quality management systems that ensure
+              the highest standards of food safety and quality.
             </p>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

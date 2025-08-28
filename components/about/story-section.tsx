@@ -3,28 +3,10 @@ import { Calendar, Users, Award, TrendingUp } from "lucide-react"
 
 const milestones = [
   {
-    year: "2018",
+    year: "2025",
     title: "Founded",
     description: "Started with a vision to modernize traditional Indian recipes",
     icon: Calendar,
-  },
-  {
-    year: "2020",
-    title: "First Certification",
-    description: "Achieved FSSAI approval and established quality standards",
-    icon: Award,
-  },
-  {
-    year: "2022",
-    title: "Team Expansion",
-    description: "Grew to 50+ employees including food technologists and chefs",
-    icon: Users,
-  },
-  {
-    year: "2024",
-    title: "Market Leadership",
-    description: "Serving 200+ restaurants and cloud kitchens across India",
-    icon: TrendingUp,
   },
 ]
 

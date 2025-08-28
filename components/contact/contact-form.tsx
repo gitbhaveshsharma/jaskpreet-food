@@ -94,7 +94,7 @@ export function ContactForm() {
 
           <div className="space-y-2">
             <Label htmlFor="inquiryType">Inquiry Type *</Label>
-            <Select onValueChange={(value) => setValue("inquiryType", value)}>
+            <Select onValueChange={(value) => setValue("inquiryType", value as ContactFormData["inquiryType"])}>
               <SelectTrigger>
                 <SelectValue placeholder="Select inquiry type" />
               </SelectTrigger>

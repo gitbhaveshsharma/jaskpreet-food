@@ -2,7 +2,6 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Star } from "lucide-react"
-import { useState, useEffect } from "react"
 
 const testimonials = [
   {
@@ -28,17 +27,24 @@ const testimonials = [
       "Outstanding food safety standards and reliable supply chain. Perfect partner for our large-scale operations.",
     rating: 5,
   },
+  {
+    id: 4,
+    name: "Anjali Patel",
+    company: "Mumbai Food Hub",
+    content: "The consistency in taste and quality has helped us maintain our brand reputation across all locations.",
+    rating: 5,
+  },
+  {
+    id: 5,
+    name: "Vikram Singh",
+    company: "North Indian Cuisine Co.",
+    content: "Exceptional spice blends and marinades. Our customers always ask about the secret to our flavors!",
+    rating: 5,
+  },
 ]
 
 export function TestimonialsSection() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % testimonials.length)
-    }, 5000)
-    return () => clearInterval(timer)
-  }, [])
+  const duplicatedTestimonials = [...testimonials, ...testimonials]
 
   return (
     <section className="py-20 max-w-7xl mx-auto px-4">
@@ -50,37 +56,51 @@ export function TestimonialsSection() {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <Card className="border-0 shadow-lg">
-            <CardContent className="p-12 text-center">
-              <div className="flex justify-center mb-6">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <blockquote className="text-xl lg:text-2xl font-medium leading-relaxed mb-8">
-                "{testimonials[currentIndex].content}"
-              </blockquote>
-              <div>
-                <p className="font-semibold text-lg">{testimonials[currentIndex].name}</p>
-                <p className="text-muted-foreground">{testimonials[currentIndex].company}</p>
-              </div>
-            </CardContent>
-          </Card>
+        <div className="relative overflow-hidden py-10">
+          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none"></div>
 
-          {/* Testimonial Indicators */}
-          <div className="flex justify-center space-x-2 mt-8">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                className={`w-3 h-3 rounded-full transition-colors ${index === currentIndex ? "bg-primary" : "bg-muted"
-                  }`}
-                onClick={() => setCurrentIndex(index)}
-              />
+          <div className="flex animate-scroll-left space-x-6">
+            {duplicatedTestimonials.map((testimonial, index) => (
+              <Card key={`${testimonial.id}-${index}`} className="flex-shrink-0 w-80 border-0 shadow-lg">
+                <CardContent className="p-8">
+                  <div className="flex justify-center mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  <blockquote className="text-base font-medium leading-relaxed mb-6 text-center">
+                    "{testimonial.content}"
+                  </blockquote>
+                  <div className="text-center">
+                    <p className="font-semibold">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.company}</p>
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes scroll-left {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        
+        .animate-scroll-left {
+          animation: scroll-left 30s linear infinite;
+        }
+        
+        .animate-scroll-left:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
     </section>
   )
 }

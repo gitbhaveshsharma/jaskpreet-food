@@ -128,7 +128,10 @@ export function Footer() {
               quality={75}
             />
           </div>
-          <p className="text-sm text-muted-foreground">© 2025 Jaskpreet Food. All rights reserved.</p>
+          <div className="text-sm text-muted-foreground">
+            <p>© 2025 Jaskpreet Food. All rights reserved.</p>
+            <p>Design by <Link href="https://thebluebe.live/" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">theBlueBe</Link></p>
+          </div>
         </div>
       </div>
     </footer>
